@@ -27,8 +27,8 @@ const Signup = () => {
     try {
       const url =
         role === "booker"
-          ? "http://localhost:5000/api/auth/booker/register"
-          : "http://localhost:5000/api/auth/provider/register";
+          ? "https://smartserve-7duf.onrender.com/api/auth/booker/register"
+          : "https://smartserve-7duf.onrender.com/api/auth/provider/register";
 
       const res = await axios.post(url, formData);
 

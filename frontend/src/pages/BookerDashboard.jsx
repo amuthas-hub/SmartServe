@@ -11,7 +11,7 @@ const BookerDashboard = () => {
   const fetchProviders = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/providers"
+        "https://smartserve-7duf.onrender.com/api/providers"
       );
 
       setProviders(res.data);
@@ -25,7 +25,7 @@ const BookerDashboard = () => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/bookings",
+        "https://smartserve-7duf.onrender.com/api/bookings",
         {
           bookerId: user._id,
           providerId: provider._id,

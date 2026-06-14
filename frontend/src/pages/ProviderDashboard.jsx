@@ -15,7 +15,7 @@ const ProviderDashboard = () => {
   const fetchBookings = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/bookings"
+        "https://smartserve-7duf.onrender.com/api/bookings"
       );
 
       const providerBookings =
@@ -32,7 +32,7 @@ const ProviderDashboard = () => {
   const updateStatus = async (bookingId, status) => {
   try {
     await axios.put(
-      `http://localhost:5000/api/bookings/${bookingId}`,
+      `https://smartserve-7duf.onrender.com/api/bookings/${bookingId}`,
       { status }
     );
 
